@@ -47,3 +47,10 @@ h2 {
   margin: auto;
   padding: 20px;
 }
+h1 {
+  text-shadow: 0 0 15px #00ff66;
+}
+
+.logo {
+  filter: drop-shadow(0 0 10px #00ff66);
+}
