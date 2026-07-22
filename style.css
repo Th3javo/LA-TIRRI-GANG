@@ -27,3 +27,7 @@ a {
 a:hover {
   background: white;
 }
+img {
+  border-radius: 20px;
+  margin-top: 20px;
+}
