@@ -336,3 +336,43 @@ body::after {
   }
 
 }
+/* EL TIRRI GRANDE EN EL BANNER */
+
+.tirri-banner {
+  font-size: 65px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  color: #ffffff;
+
+  text-shadow:
+    0 3px 0 #bdbdbd,
+    0 6px 0 #777,
+    0 0 15px #ffffff,
+    0 0 30px #ff003c,
+    0 0 50px rgba(255, 0, 60, 0.7);
+
+  margin-top: 5px;
+
+  animation: tirriBrillo 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes tirriBrillo {
+  from {
+    transform: scale(1);
+    text-shadow:
+      0 3px 0 #bdbdbd,
+      0 6px 0 #777,
+      0 0 15px #ffffff,
+      0 0 30px #ff003c;
+  }
+
+  to {
+    transform: scale(1.04);
+    text-shadow:
+      0 3px 0 #bdbdbd,
+      0 6px 0 #777,
+      0 0 20px #ffffff,
+      0 0 40px #ff003c,
+      0 0 65px rgba(255, 0, 60, 0.8);
+  }
+}
