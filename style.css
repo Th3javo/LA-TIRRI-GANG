@@ -340,5 +340,19 @@ body::after {
     font-size: 60px;
     letter-spacing: 5px;
   }
+/* BOTONES DE REDES */
 
+.redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.redes a {
+  margin: 5px;
+  min-width: 120px;
+  box-sizing: border-box;
+}
 }
