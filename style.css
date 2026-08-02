@@ -878,3 +878,111 @@ body::after {
   }
 
 }
+/* =========================
+EMOJIS CASINO
+MISMO MOVIMIENTO QUE LAS FICHAS
+========================= */
+
+.emojis-casino {
+position: fixed;
+inset: 0;
+
+pointer-events: none;
+
+z-index: -1;
+}
+
+.emojis-casino span {
+position: absolute;
+
+top: 0;
+
+font-size: 32px;
+
+opacity: 0.12;
+
+animation: moverFicha linear infinite;
+}
+
+/* POSICIONES */
+
+.emojis-casino span:nth-child(1) {
+left: 10%;
+animation-duration: 30s;
+}
+
+.emojis-casino span:nth-child(2) {
+left: 25%;
+animation-duration: 37s;
+}
+
+.emojis-casino span:nth-child(3) {
+left: 40%;
+animation-duration: 33s;
+}
+
+.emojis-casino span:nth-child(4) {
+left: 52%;
+animation-duration: 40s;
+}
+
+.emojis-casino span:nth-child(5) {
+left: 65%;
+animation-duration: 29s;
+}
+
+.emojis-casino span:nth-child(6) {
+left: 75%;
+animation-duration: 36s;
+}
+
+.emojis-casino span:nth-child(7) {
+left: 87%;
+animation-duration: 32s;
+}
+
+.emojis-casino span:nth-child(8) {
+left: 95%;
+animation-duration: 42s;
+}
+
+/* DIFERENTES TAMAÑOS */
+
+.emojis-casino span:nth-child(2) {
+font-size: 25px;
+}
+
+.emojis-casino span:nth-child(3) {
+font-size: 38px;
+}
+
+.emojis-casino span:nth-child(4) {
+font-size: 28px;
+}
+
+.emojis-casino span:nth-child(5) {
+font-size: 42px;
+}
+
+.emojis-casino span:nth-child(6) {
+font-size: 30px;
+}
+
+.emojis-casino span:nth-child(7) {
+font-size: 35px;
+}
+
+.emojis-casino span:nth-child(8) {
+font-size: 26px;
+}
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+.emojis-casino span {
+font-size: 24px;
+opacity: 0.10;
+}
+
+}
