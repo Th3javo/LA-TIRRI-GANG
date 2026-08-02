@@ -345,10 +345,8 @@ body::after {
   }
 
 }
-
-
 /* =========================
-   BOTONES DE REDES
+   BOTONES DE REDES - LA TIRRI GANG
 ========================= */
 
 .redes {
@@ -361,13 +359,21 @@ body::after {
 }
 
 .redes a {
+  position: relative;
+  overflow: hidden;
+
   display: inline-block;
   min-width: 120px;
-  padding: 12px 18px;
+  padding: 13px 20px;
 
   box-sizing: border-box;
 
-  background: #151515;
+  background: linear-gradient(
+    145deg,
+    #151515,
+    #080808
+  );
+
   color: white;
   text-decoration: none;
 
@@ -377,31 +383,89 @@ body::after {
   font-family: 'Rajdhani', sans-serif;
   font-size: 18px;
   font-weight: 700;
+  letter-spacing: 1px;
 
   box-shadow:
-    0 0 8px rgba(0, 255, 102, 0.5);
+    0 0 8px rgba(0, 255, 102, 0.5),
+    inset 0 0 10px rgba(0, 255, 102, 0.08);
 
   transition:
     transform 0.25s ease,
-    background 0.25s ease,
     color 0.25s ease,
-    box-shadow 0.25s ease;
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
 }
 
+
+/* BRILLO QUE RECORRE EL BOTÓN */
+
+.redes a::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: -120%;
+
+  width: 70%;
+  height: 100%;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.20),
+    transparent
+  );
+
+  transform: skewX(-25deg);
+
+  transition: left 0.6s ease;
+}
+
+
+/* HOVER */
+
 .redes a:hover {
-  transform: scale(1.08);
+
+  transform:
+    translateY(-5px)
+    scale(1.05);
 
   background: #00ff66;
+
   color: #050505;
 
+  border-color: #ffffff;
+
   box-shadow:
-    0 0 15px #00ff66,
-    0 0 30px rgba(0, 255, 102, 0.6);
+    0 0 10px #00ff66,
+    0 0 25px #00ff66,
+    0 0 45px rgba(0, 255, 102, 0.6);
+
+}
+
+
+/* PASO DEL BRILLO */
+
+.redes a:hover::before {
+  left: 150%;
+}
+
+
+/* EFECTO AL PRESIONAR */
+
+.redes a:active {
+  transform:
+    translateY(1px)
+    scale(0.97);
+
+  box-shadow:
+    0 0 10px #ff003c;
 }
 
 
 /* =========================
-   REDES EN CELULAR
+   BOTONES EN CELULAR
 ========================= */
 
 @media (max-width: 600px) {
@@ -413,11 +477,12 @@ body::after {
 
   .redes a {
     min-width: 100px;
-    padding: 10px 14px;
+    padding: 11px 14px;
     font-size: 16px;
   }
 
 }
+
 /* =========================
    FICHAS DE CASINO DE FONDO
 ========================= */
