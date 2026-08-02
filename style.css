@@ -539,6 +539,54 @@ body::after {
   animation-duration: 30s;
 }
 
+.ficha-casino:nth-child(6) {
+  left: 15%;
+  width: 100px;
+  height: 100px;
+  animation-duration: 38s;
+}
+
+.ficha-casino:nth-child(7) {
+  left: 35%;
+  width: 70px;
+  height: 70px;
+  animation-duration: 27s;
+}
+
+.ficha-casino:nth-child(8) {
+  left: 60%;
+  width: 115px;
+  height: 115px;
+  animation-duration: 34s;
+}
+
+.ficha-casino:nth-child(9) {
+  left: 82%;
+  width: 75px;
+  height: 75px;
+  animation-duration: 42s;
+}
+
+.ficha-casino:nth-child(10) {
+  left: 12%;
+  width: 65px;
+  height: 65px;
+  animation-duration: 31s;
+}
+
+.ficha-casino:nth-child(11) {
+  left: 55%;
+  width: 85px;
+  height: 85px;
+  animation-duration: 37s;
+}
+
+.ficha-casino:nth-child(12) {
+  left: 93%;
+  width: 95px;
+  height: 95px;
+  animation-duration: 29s;
+}
 
 /* CELULAR */
 
