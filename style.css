@@ -415,3 +415,134 @@ body::after {
   }
 
 }
+/* =========================
+   FICHAS DE CASINO DE FONDO
+========================= */
+
+.ficha-casino {
+  position: fixed;
+
+  width: 110px;
+  height: 110px;
+
+  border-radius: 50%;
+
+  pointer-events: none;
+
+  z-index: -1;
+
+  opacity: 0.10;
+
+  border: 8px dashed rgba(255, 255, 255, 0.8);
+
+  box-shadow:
+    0 0 20px rgba(255, 0, 60, 0.5),
+    inset 0 0 20px rgba(0, 255, 102, 0.25);
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(255, 0, 60, 0.25) 0%,
+      rgba(0, 0, 0, 0.05) 55%,
+      rgba(0, 255, 102, 0.15) 100%
+    );
+
+  animation:
+    moverFicha linear infinite;
+}
+
+
+/* CENTRO DE LA FICHA */
+
+.ficha-casino::before {
+  content: "★";
+
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  font-size: 38px;
+
+  color: rgba(255, 255, 255, 0.65);
+
+  text-shadow:
+    0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+
+/* MOVIMIENTO */
+
+@keyframes moverFicha {
+
+  0% {
+    transform:
+      translateY(110vh)
+      rotate(0deg)
+      scale(0.8);
+  }
+
+  50% {
+    transform:
+      translateY(0)
+      rotate(180deg)
+      scale(1);
+  }
+
+  100% {
+    transform:
+      translateY(-120vh)
+      rotate(360deg)
+      scale(0.8);
+  }
+
+}
+
+
+/* VARIACIONES */
+
+.ficha-casino:nth-of-type(1) {
+  left: 5%;
+  animation-duration: 28s;
+}
+
+.ficha-casino:nth-of-type(2) {
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-duration: 35s;
+}
+
+.ficha-casino:nth-of-type(3) {
+  left: 48%;
+  width: 130px;
+  height: 130px;
+  animation-duration: 32s;
+}
+
+.ficha-casino:nth-of-type(4) {
+  left: 70%;
+  width: 90px;
+  height: 90px;
+  animation-duration: 40s;
+}
+
+.ficha-casino:nth-of-type(5) {
+  left: 90%;
+  width: 120px;
+  height: 120px;
+  animation-duration: 30s;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+  .ficha-casino {
+    opacity: 0.07;
+  }
+
+}
