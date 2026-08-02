@@ -356,3 +356,62 @@ body::after {
   box-sizing: border-box;
 }
 }
+/* BOTONES DE REDES */
+
+.redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin: 25px 0;
+}
+
+.redes a {
+  display: inline-block;
+  min-width: 120px;
+  padding: 12px 18px;
+
+  background: #151515;
+  color: white;
+  text-decoration: none;
+
+  border: 2px solid #00ff66;
+  border-radius: 15px;
+
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+
+  box-shadow:
+    0 0 8px rgba(0, 255, 102, 0.5);
+
+  transition: all 0.25s ease;
+}
+
+.redes a:hover {
+  transform: scale(1.08);
+
+  background: #00ff66;
+  color: #050505;
+
+  box-shadow:
+    0 0 15px #00ff66,
+    0 0 30px rgba(0, 255, 102, 0.6);
+}
+
+/* AJUSTE PARA CELULAR */
+
+@media (max-width: 600px) {
+
+  .redes {
+    gap: 10px;
+  }
+
+  .redes a {
+    min-width: 100px;
+    padding: 10px 14px;
+    font-size: 16px;
+  }
+
+}
