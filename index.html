@@ -66,15 +66,17 @@ Mira los directos, acompaña a la comunidad y no te pierdas ningún momento.
 Forma parte de la familia y acompáñanos en cada directo.
 </p>
  </div>
- <script>
+<script>
   const cantidadParticulas = 35;
 
   for (let i = 0; i < cantidadParticulas; i++) {
+
     const particula = document.createElement("span");
 
     particula.classList.add("particula");
 
-    particula.style.left = Math.random() * 100 + "vw";
+    particula.style.left =
+      Math.random() * 100 + "vw";
 
     particula.style.animationDelay =
       Math.random() * 8 + "s";
@@ -89,9 +91,14 @@ Forma parte de la familia y acompáñanos en cada directo.
   const cantidadRojas = 25;
 
   for (let i = 0; i < cantidadRojas; i++) {
-    const particulaRoja = document.createElement("span");
 
-    particulaRoja.classList.add("particula", "roja");
+    const particulaRoja =
+      document.createElement("span");
+
+    particulaRoja.classList.add(
+      "particula",
+      "roja"
+    );
 
     particulaRoja.style.left =
       Math.random() * 100 + "vw";
@@ -104,6 +111,6 @@ Forma parte de la familia y acompáñanos en cada directo.
 
     document.body.appendChild(particulaRoja);
   }
-</script> 
+</script>
 </body>
 </html>
