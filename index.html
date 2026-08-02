@@ -7,7 +7,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LA TIRRI GANG</title>
 </head>
+<script>
+  const cantidadParticulas = 35;
 
+  for (let i = 0; i < cantidadParticulas; i++) {
+    const particula = document.createElement("span");
+
+    particula.classList.add("particula");
+
+    particula.style.left = Math.random() * 100 + "vw";
+    particula.style.animationDelay = Math.random() * 8 + "s";
+    particula.style.animationDuration =
+      6 + Math.random() * 8 + "s";
+
+    document.body.appendChild(particula);
+  }
+</script>
 <body>
  <div class="contenedor"> 
    <div class="banner">
