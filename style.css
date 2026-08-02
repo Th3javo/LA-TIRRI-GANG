@@ -1,8 +1,46 @@
 body {
   font-family: 'Rajdhani', sans-serif;
-  background: #0b0b0b;
   color: white;
   text-align: center;
+
+  min-height: 100vh;
+  margin: 0;
+
+  background:
+    radial-gradient(
+      circle at 15% 20%,
+      rgba(255, 0, 0, 0.25),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 85% 80%,
+      rgba(0, 255, 102, 0.12),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 50% 50%,
+      rgba(120, 0, 255, 0.10),
+      transparent 45%
+    ),
+    #050505;
+
+  background-size: 180% 180%;
+
+  animation: fondoMovimiento 15s ease-in-out infinite;
+}
+
+@keyframes fondoMovimiento {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  50% {
+    background-position: 100% 100%;
+  }
+
+  100% {
+    background-position: 0% 0%;
+  }
 }
 
 h1 {
