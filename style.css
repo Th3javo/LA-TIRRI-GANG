@@ -736,3 +736,52 @@ body::after {
   }
 
 }
+/* =========================
+   LOGO STAKE
+========================= */
+
+.stake-logo {
+  margin-top: 60px;
+  padding: 20px;
+  text-align: center;
+}
+
+.stake-logo img {
+  width: 420px;
+  max-width: 80%;
+  height: auto;
+
+  display: inline-block;
+
+  filter:
+    drop-shadow(0 0 8px rgba(255, 255, 255, 0.25))
+    drop-shadow(0 0 20px rgba(255, 255, 255, 0.12));
+
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease;
+}
+
+.stake-logo img:hover {
+  transform: scale(1.05);
+
+  filter:
+    drop-shadow(0 0 10px rgba(255, 255, 255, 0.35))
+    drop-shadow(0 0 30px rgba(255, 255, 255, 0.2));
+}
+
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+  .stake-logo {
+    margin-top: 45px;
+  }
+
+  .stake-logo img {
+    width: 300px;
+    max-width: 85%;
+  }
+
+}
