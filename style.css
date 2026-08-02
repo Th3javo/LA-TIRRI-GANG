@@ -218,6 +218,7 @@ body::after {
 
 .particula.roja {
  top: 0;
+  bottom: auto;
   background: #ff003c;
 
   box-shadow:
