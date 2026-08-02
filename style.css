@@ -471,55 +471,82 @@ body::after {
 }
 
 
-/* PINTAS DE PÓKER */
+/* =========================
+   PINTAS DE PÓKER
+========================= */
 
+/* 1 - PICA ♠ */
 .ficha-casino:nth-child(1)::before {
   content: "♠";
+  color: rgba(0, 0, 0, 0.75);
 }
 
+/* 2 - CORAZÓN ♥ */
 .ficha-casino:nth-child(2)::before {
   content: "♥";
+  color: rgba(255, 0, 60, 0.75);
 }
 
+/* 3 - DIAMANTE ♦ */
 .ficha-casino:nth-child(3)::before {
   content: "♦";
+  color: rgba(255, 0, 60, 0.75);
 }
 
+/* 4 - TRÉBOL ♣ */
 .ficha-casino:nth-child(4)::before {
   content: "♣";
+  color: rgba(0, 0, 0, 0.75);
 }
 
+/* 5 - PICA ♠ */
 .ficha-casino:nth-child(5)::before {
   content: "♠";
+  color: rgba(0, 0, 0, 0.75);
 }
 
+/* 6 - CORAZÓN ♥ */
 .ficha-casino:nth-child(6)::before {
   content: "♥";
+  color: rgba(255, 0, 60, 0.75);
 }
 
+/* 7 - DIAMANTE ♦ */
 .ficha-casino:nth-child(7)::before {
   content: "♦";
+  color: rgba(255, 0, 60, 0.75);
 }
 
+/* 8 - TRÉBOL ♣ */
 .ficha-casino:nth-child(8)::before {
   content: "♣";
+  color: rgba(0, 0, 0, 0.75);
 }
 
+/* 9 - PICA ♠ */
 .ficha-casino:nth-child(9)::before {
   content: "♠";
+  color: rgba(0, 0, 0, 0.75);
 }
 
+/* 10 - CORAZÓN ♥ */
 .ficha-casino:nth-child(10)::before {
   content: "♥";
+  color: rgba(255, 0, 60, 0.75);
 }
 
+/* 11 - DIAMANTE ♦ */
 .ficha-casino:nth-child(11)::before {
   content: "♦";
+  color: rgba(255, 0, 60, 0.75);
 }
 
+/* 12 - TRÉBOL ♣ */
 .ficha-casino:nth-child(12)::before {
   content: "♣";
+  color: rgba(0, 0, 0, 0.75);
 }
+
 
 
 
