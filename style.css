@@ -43,6 +43,7 @@ body {
   }
 }
 /* TÍTULO 3D LA TIRRI GANG */
+/* TÍTULO 3D LA TIRRI GANG */
 
 h1 {
   font-family: 'Rajdhani', sans-serif;
@@ -53,8 +54,8 @@ h1 {
   letter-spacing: 3px;
   text-transform: uppercase;
 
-  position: relative;
   display: inline-block;
+  max-width: 100%;
 
   text-shadow:
     0 2px 0 #00b84a,
@@ -64,37 +65,7 @@ h1 {
     0 0 25px #00ff66,
     0 0 50px rgba(0, 255, 102, 0.5);
 
-  transform: perspective(500px) rotateX(8deg);
-
   animation: titulo3D 3s ease-in-out infinite alternate;
-}
-
-
-/* DESTELLO QUE RECORRE EL TÍTULO */
-
-h1::after {
-  content: "";
-
-  position: absolute;
-
-  top: 0;
-  left: -100%;
-
-  width: 50%;
-  height: 100%;
-
-  background: linear-gradient(
-    110deg,
-    transparent,
-    rgba(255, 255, 255, 0.8),
-    transparent
-  );
-
-  transform: skewX(-20deg);
-
-  animation: destelloTitulo 4s ease-in-out infinite;
-
-  pointer-events: none;
 }
 
 
@@ -103,36 +74,23 @@ h1::after {
 @keyframes titulo3D {
 
   0% {
-    transform:
-      perspective(500px)
-      rotateX(8deg)
-      scale(1);
+    transform: perspective(500px) rotateX(5deg) scale(1);
   }
 
   100% {
-    transform:
-      perspective(500px)
-      rotateX(8deg)
-      scale(1.03);
+    transform: perspective(500px) rotateX(5deg) scale(1.03);
   }
 
 }
 
 
-/* ANIMACIÓN DEL DESTELLO */
+/* AJUSTE PARA CELULAR */
 
-@keyframes destelloTitulo {
+@media (max-width: 600px) {
 
-  0% {
-    left: -100%;
-  }
-
-  35% {
-    left: 150%;
-  }
-
-  100% {
-    left: 150%;
+  h1 {
+    font-size: 40px;
+    letter-spacing: 2px;
   }
 
 }
